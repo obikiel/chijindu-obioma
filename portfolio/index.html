@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chijindu Ezekiel Obioma — DevOps Engineer</title>
+    <meta name="description" content="DevOps Engineer specializing in Terraform, AWS, Azure, Docker, Kubernetes, and CI/CD automation. Automating infrastructure. Engineering reliability.">
+    <meta name="keywords" content="DevOps, Cloud Engineer, Terraform, AWS, Azure, Docker, Kubernetes, CI/CD, Infrastructure as Code">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chijindu Ezekiel Obioma — DevOps Engineer">
+    <meta property="og:description" content="Automating Infrastructure. Engineering Reliability.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og-image.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
+                <span class="logo-bracket">&lt;</span>CEO<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="nav__cta">Let's Talk</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__grid-bg"></div>
+        <div class="hero__glow"></div>
+        <div class="hero__container">
+            <div class="hero__terminal">
+                <div class="terminal__header">
+                    <span class="terminal__dot terminal__dot--red"></span>
+                    <span class="terminal__dot terminal__dot--yellow"></span>
+                    <span class="terminal__dot terminal__dot--green"></span>
+                    <span class="terminal__title">ceo@infra:~$</span>
+                </div>
+                <div class="terminal__body">
+                    <p class="terminal__line">
+                        <span class="terminal__prompt">$</span>
+                        <span class="terminal__text" id="typewriter"></span>
+                        <span class="terminal__cursor">|</span>
+                    </p>
+                </div>
+            </div>
+            <div class="hero__content">
+                <p class="hero__greeting">Hi, I'm</p>
+                <h1 class="hero__name">Chijindu Ezekiel<br>Obioma</h1>
+                <h2 class="hero__title">DevOps Engineer</h2>
+                <p class="hero__tagline">Automating Infrastructure. Engineering Reliability.</p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                    <a href="#contact" class="btn btn--outline">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero__stats">
+                <div class="stat">
+                    <span class="stat__number" data-count="50">0</span><span class="stat__suffix">+</span>
+                    <span class="stat__label">Pipelines Built</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="99">0</span><span class="stat__suffix">.9%</span>
+                    <span class="stat__label">Uptime Achieved</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="80">0</span><span class="stat__suffix">%</span>
+                    <span class="stat__label">Faster Deployments</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section__title">
+                <span class="section__arrow">&gt;&gt;&gt;</span> About Me
+            </h2>
+            <div class="about__grid">
+                <div class="about__text">
+                    <p>I'm a DevOps Engineer who automates everything. I design and build cloud infrastructure on <strong>AWS</strong> and <strong>Azure</strong>, containerize applications with <strong>Docker</strong> and <strong>Kubernetes</strong>, and ship reliable <strong>CI/CD pipelines</strong> that let teams deploy with confidence.</p>
+                    <p>Whether it's reducing deployment time from hours to minutes or architecting zero-downtime systems, I turn infrastructure into a competitive advantage.</p>
+                    <p>I believe in infrastructure as code, immutable deployments, and the power of automation to eliminate toil and human error.</p>
+                    <a href="resume.pdf" class="btn btn--outline" download>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="about__terminal">
+                    <div class="terminal__header">
+                        <span class="terminal__dot terminal__dot--red"></span>
+                        <span class="terminal__dot terminal__dot--yellow"></span>
+                        <span class="terminal__dot terminal__dot--green"></span>
+                        <span class="terminal__title">about.json</span>
+                    </div>
+                    <div class="terminal__body">
+<pre><code>{
+  "name": "Chijindu Ezekiel Obioma",
+  "role": "DevOps Engineer",
+  "location": "Available Worldwide",
+  "languages": ["English"],
+  "interests": [
+    "Cloud Architecture",
+    "Infrastructure Automation",
+    "Site Reliability",
+    "Open Source"
+  ],
+  "available_for": [
+    "Full-time roles",
+    "Contract work",
+    "Consulting"
+  ]
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section__title">
+                <span class="section__arrow">&gt;&gt;&gt;</span> Tech Stack
+            </h2>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">CloudFormation</span>
+                        <span class="tag">ARM Templates</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><circle cx="6" cy="6" r="1" fill="#00E5FF"/><circle cx="6" cy="18" r="1" fill="#00E5FF"/></svg>
+                    </div>
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">IIS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="1.5"><path d="M22 12A10 10 0 1 1 12 2"/><path d="M22 2L12 12"/><path d="M16 2h6v6"/></svg>
+                    </div>
+                    <h3>Containers & Orchestration</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Helm</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h3>CI/CD & Automation</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Azure DevOps</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="1.5"><path d="M12 20V10M6 20V4M18 20v-6"/></svg>
+                    </div>
+                    <h3>Monitoring & Observability</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">CloudWatch</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Security & Networking</h3>
+                    <div class="skill-card__tags">
+                        <span class="tag">IAM</span>
+                        <span class="tag">VPC</span>
+                        <span class="tag">SSL/TLS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section__title">
+                <span class="section__arrow">&gt;&gt;&gt;</span> Projects
+            </h2>
+            <div class="projects__grid">
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <div class="project-card__links">
+                            <a href="#" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="#" aria-label="External link" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Multi-Cloud Terraform Infrastructure</h3>
+                    <p class="project-card__description">Designed and deployed a multi-cloud infrastructure spanning AWS and Azure using Terraform modules. Automated provisioning of VPCs, subnets, security groups, and compute instances with state management via S3 backend.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">S3</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <div class="project-card__links">
+                            <a href="#" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="#" aria-label="External link" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Kubernetes CI/CD Pipeline</h3>
+                    <p class="project-card__description">Built an end-to-end CI/CD pipeline using GitHub Actions that builds Docker images, runs tests, and deploys to a Kubernetes cluster with zero-downtime rolling updates. Reduced deployment time by 80%.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Helm</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <div class="project-card__links">
+                            <a href="#" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="#" aria-label="External link" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">IIS Windows Server Automation</h3>
+                    <p class="project-card__description">Automated IIS web server provisioning and configuration on Azure Windows VMs using PowerShell DSC and Terraform. Includes SSL certificate management, application pool configuration, and health monitoring.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">IIS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Terraform</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <div class="project-card__links">
+                            <a href="#" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="#" aria-label="External link" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Monitoring & Alerting Stack</h3>
+                    <p class="project-card__description">Deployed a full observability stack with Prometheus, Grafana, and Alertmanager on Kubernetes. Custom dashboards track application performance, infrastructure health, and SLO compliance with PagerDuty integration.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">PagerDuty</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section__title">
+                <span class="section__arrow">&gt;&gt;&gt;</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3>DevOps Engineer</h3>
+                            <span class="timeline__period">Present</span>
+                        </div>
+                        <p class="timeline__company">Your Company / Freelance</p>
+                        <ul class="timeline__details">
+                            <li>Architected and managed cloud infrastructure on AWS and Azure using Terraform</li>
+                            <li>Containerized applications with Docker and orchestrated with Kubernetes</li>
+                            <li>Built CI/CD pipelines reducing deployment time by 80%</li>
+                            <li>Implemented monitoring solutions achieving 99.9% uptime</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+            <p class="experience__note">Update this section with your actual work experience.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">
+                <span class="section__arrow">&gt;&gt;&gt;</span> Get In Touch
+            </h2>
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <p class="contact__intro">I'm currently available for full-time roles, contract work, and consulting engagements. Let's build something reliable together.</p>
+                    <div class="contact__links">
+                        <a href="mailto:ezekielobiomachi1@gmail.com" class="contact__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            ezekielobiomachi1@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/chijindu-obioma/" target="_blank" class="contact__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/obikiel" target="_blank" class="contact__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://x.com/ChijinduObioma" target="_blank" class="contact__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16zM4 20l6.768 -6.768M13.232 10.768L20 4"/></svg>
+                            Twitter/X
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contactForm">
+                    <div class="form__group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        Send Message
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__logo">
+                    <span class="logo-bracket">&lt;</span>CEO<span class="logo-bracket"> /&gt;</span>
+                </p>
+                <p class="footer__copy">Designed & Built by Chijindu Ezekiel Obioma</p>
+                <p class="footer__tagline">Automating Infrastructure. Engineering Reliability.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

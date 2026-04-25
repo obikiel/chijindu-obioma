@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter/X Header — Chijindu Ezekiel Obioma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            padding: 40px;
+        }
+        .banner {
+            width: 1500px;
+            height: 500px;
+            background: #0A0E17;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(30,41,59,0.4) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30,41,59,0.4) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0,229,255,0.1) 0%, transparent 70%);
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 80px 60px;
+        }
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            font-weight: 700;
+            color: #E8ECF1;
+            margin-bottom: 20px;
+        }
+        .logo-bracket {
+            color: #00E5FF;
+        }
+        .name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 52px;
+            font-weight: 700;
+            color: #E8ECF1;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+        .role {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #00E5FF;
+            margin-bottom: 12px;
+        }
+        .tagline {
+            font-family: 'Fira Code', monospace;
+            font-size: 15px;
+            color: #64748B;
+        }
+        .tech-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 28px;
+        }
+        .tech-badge {
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+            color: #00E5FF;
+            background: rgba(0,229,255,0.08);
+            border: 1px solid rgba(0,229,255,0.2);
+            padding: 6px 16px;
+            border-radius: 4px;
+        }
+        .gradient-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00E5FF, #39FF14);
+        }
+        .instructions {
+            color: #aaa;
+            text-align: center;
+            margin-top: 24px;
+            font-family: system-ui;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="glow"></div>
+        <div class="content">
+            <div class="logo"><span class="logo-bracket">&lt;</span>CEO<span class="logo-bracket"> /&gt;</span></div>
+            <div class="name">Chijindu Ezekiel Obioma</div>
+            <div class="role">DevOps Engineer</div>
+            <div class="tagline">Automating Infrastructure. Engineering Reliability.</div>
+            <div class="tech-row">
+                <span class="tech-badge">Terraform</span>
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Azure</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Kubernetes</span>
+                <span class="tech-badge">CI/CD</span>
+            </div>
+        </div>
+        <div class="gradient-line"></div>
+    </div>
+    <p class="instructions">Screenshot this at 1500x500 for your Twitter/X header</p>
+</body>
+</html>

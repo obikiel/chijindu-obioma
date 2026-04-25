@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn Banner — Chijindu Ezekiel Obioma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            padding: 40px;
+        }
+        .banner {
+            width: 1584px;
+            height: 396px;
+            background: #0A0E17;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Grid background */
+        .banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(30,41,59,0.4) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30,41,59,0.4) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        /* Glow */
+        .glow {
+            position: absolute;
+            top: -100px;
+            right: 200px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0,229,255,0.12) 0%, transparent 70%);
+        }
+        .glow-2 {
+            position: absolute;
+            bottom: -150px;
+            left: 300px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(57,255,20,0.06) 0%, transparent 70%);
+        }
+        /* Content */
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            padding: 48px 72px;
+        }
+        .left {
+            flex: 1;
+        }
+        .name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 42px;
+            font-weight: 700;
+            color: #E8ECF1;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+        .role {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #00E5FF;
+            margin-bottom: 8px;
+        }
+        .tagline {
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+            color: #64748B;
+            letter-spacing: 0.5px;
+        }
+        /* Tech badges */
+        .tech-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 24px;
+        }
+        .tech-badge {
+            font-family: 'Fira Code', monospace;
+            font-size: 12px;
+            color: #00E5FF;
+            background: rgba(0,229,255,0.08);
+            border: 1px solid rgba(0,229,255,0.2);
+            padding: 5px 14px;
+            border-radius: 4px;
+        }
+        /* Terminal on right */
+        .right {
+            width: 420px;
+            flex-shrink: 0;
+        }
+        .terminal {
+            background: rgba(19,26,43,0.9);
+            border: 1px solid #1E293B;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .terminal-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: rgba(19,26,43,1);
+            border-bottom: 1px solid #1E293B;
+        }
+        .dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+        }
+        .dot-r { background: #FF5F57; }
+        .dot-y { background: #FEBC2E; }
+        .dot-g { background: #28C840; }
+        .terminal-title {
+            font-family: 'Fira Code', monospace;
+            font-size: 11px;
+            color: #64748B;
+            margin-left: 6px;
+        }
+        .terminal-body {
+            padding: 18px 20px;
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+            line-height: 2;
+        }
+        .prompt {
+            color: #00E5FF;
+        }
+        .cmd {
+            color: #E8ECF1;
+        }
+        .success {
+            color: #39FF14;
+        }
+        /* Bottom gradient line */
+        .gradient-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00E5FF, #39FF14);
+        }
+        /* Instructions */
+        .instructions {
+            color: #aaa;
+            text-align: center;
+            margin-top: 24px;
+            font-family: system-ui;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="banner">
+            <div class="glow"></div>
+            <div class="glow-2"></div>
+            <div class="content">
+                <div class="left">
+                    <div class="name">Chijindu Ezekiel<br>Obioma</div>
+                    <div class="role">DevOps Engineer</div>
+                    <div class="tagline">Automating Infrastructure. Engineering Reliability.</div>
+                    <div class="tech-row">
+                        <span class="tech-badge">Terraform</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Azure</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kubernetes</span>
+                        <span class="tech-badge">CI/CD</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="dot dot-r"></span>
+                            <span class="dot dot-y"></span>
+                            <span class="dot dot-g"></span>
+                            <span class="terminal-title">ceo@infra:~$</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div><span class="prompt">$</span> <span class="cmd">terraform apply</span> <span class="success">✓ done</span></div>
+                            <div><span class="prompt">$</span> <span class="cmd">docker build</span> <span class="success">✓ done</span></div>
+                            <div><span class="prompt">$</span> <span class="cmd">kubectl deploy</span> <span class="success">✓ done</span></div>
+                            <div><span class="prompt">$</span> <span class="cmd">pipeline status</span> <span class="success">✓ all green</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient-line"></div>
+        </div>
+        <p class="instructions">Open this file in your browser → Right-click the banner → "Save image as" or take a screenshot (1584x396)</p>
+    </div>
+</body>
+</html>
