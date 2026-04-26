@@ -150,20 +150,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// --- Contact Form ---
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Replace with your form handling (Formspree, Netlify Forms, etc.)
-    const mailtoLink = `mailto:ezekielobiomachi1@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
-    window.location.href = mailtoLink;
-});
+// --- Contact Form (powered by Web3Forms) ---
+// Form submits directly via POST action — no JS handler needed.
 
 // --- Smooth reveal for sections ---
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
